@@ -52,13 +52,17 @@
 			<plugin>
 				<groupId>com.lazerycode.jmeter</groupId>
 				<artifactId>jmeter-maven-plugin</artifactId>
-				<version>3.2.0</version> <!-- Use the latest version available -->
 				<executions>
 					<execution>
 						<id>jmeter-tests</id>
 						<goals>
 							<goal>jmeter</goal>
 						</goals>
+						<configuration>
+							<testFilesIncluded>
+								<testFile>**/*.jmx</testFile> <!-- Include all JMX files in the project -->
+							</testFilesIncluded>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
