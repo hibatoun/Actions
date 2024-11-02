@@ -1,12 +1,10 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "main" ]
+  push: 
     paths:
       - 'ActionsHiba/**'  # Directory for your project
   pull_request:
-    branches: [ "main" ]
     paths:
       - 'ActionsHiba/**'  # Directory for your project
 
