@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'ActionsHiba/**'  # Adjust path to reflect your application's directory
+      - 'C:\Users\MSI\Desktop\ActionsHiba/**'  # Adjust path to reflect your application's directory
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'ActionsHiba/**'  # Adjust path to reflect your application's directory
+      - 'C:\Users\MSI\Desktop\ActionsHiba/**''  # Adjust path to reflect your application's directory
 
 jobs:
   build:
