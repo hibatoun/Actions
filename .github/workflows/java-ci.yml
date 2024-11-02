@@ -11,16 +11,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    # Debug step to see directory structure
-    - name: Debug
+    # Debug step
+    - name: Show current directory
       run: |
-        echo "Current directory:"
+        echo "Current location:"
         pwd
-        echo "Directory contents:"
+        echo "Files in current directory:"
         ls -la
-        echo "All contents recursively:"
-        find .
-        
+    
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -29,9 +27,8 @@ jobs:
         cache: maven
         
     - name: Build with Maven
-      run: mvn -B package
-      # Removed working-directory until we confirm structure
-      
-    - name: Test with Maven
-      run: mvn test
-      # Removed working-directory until we confirm structure
+      run: |
+        echo "Maven version:"
+        mvn -version
+        echo "Building project:"
+        mvn -B package
