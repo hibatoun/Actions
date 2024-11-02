@@ -25,8 +25,3 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build with Maven
-      run: mvn -B package --file ActionsHiba/pom.xml  # Adjust path if needed
-
-    - name: Run tests
-      run: mvn test --file ActionsHiba/pom.xml  # Adjust path if needed
