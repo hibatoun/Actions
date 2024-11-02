@@ -3,5 +3,5 @@ import java.io.*;
 
 public class test {
     public test(){
-System.out.print("hiba");}
+System.out.print("3aaaaiba");}
 }
